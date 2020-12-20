@@ -1,7 +1,5 @@
 """
-Écrivez le code Python d'une fonction nommée puissance(x, n), qui élève un nombre 𝑥 à la puissance entière 𝑛
-
-, en utilisant la formule de récurrence :
+Écrivez le code Python d'une fonction nommée puissance(x, n), qui élève un nombre 𝑥 à la puissance entière 𝑛, en utilisant la formule de récurrence :
 
 𝑥𝑛=1𝑥(𝑥⋅𝑥)𝑛/2𝑥⋅(𝑥⋅𝑥)(𝑛−1)/2si 𝑛=0si 𝑛=1si 𝑛 est pairsi 𝑛 est impair
 
@@ -21,7 +19,5 @@ def puissance(x, n):
 
     if (n % 2) == 0:
         return puissance(x * x, n/2)
-    else:
-        return x * puissance(x * x, (n-1)/2)
 
-print(puissance(2, 8))
+    return x * puissance(x * x, (n-1)/2)

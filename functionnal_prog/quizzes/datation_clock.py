@@ -1,4 +1,6 @@
-"""Définissez un décorateur nommé horodateur qui, à chaque appel de la fonction décorée, affiche la date de l'appel ainsi que la valeur de ses arguments. Implantez votre décorateur sous la forme d'une fonction qui accepte en argument une autre fonction.
+"""
+Définissez un décorateur nommé horodateur qui, à chaque appel de la fonction décorée, affiche la date de l'appel ainsi que la valeur de ses arguments.
+Implantez votre décorateur sous la forme d'une fonction qui accepte en argument une autre fonction.
 
 Sur une même ligne, le format d'affichage doit comprendre les éléments suivants:
 
@@ -10,6 +12,7 @@ Sur une même ligne, le format d'affichage doit comprendre les éléments suivan
     les arguments nommés utilisés lors de l'appel, séparés par des virgules
     une parenthèse fermante.
 """
+
 from datetime import date
 
 def horodateur(callable_object):
