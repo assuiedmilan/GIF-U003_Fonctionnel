@@ -7,7 +7,7 @@ from functionnal_prog.modules.module_4 import rectangle_englobant
 
 
 def test_rectangle_englobant():
-    liste = [(1, 5), (3, 2), (0, 0), (1, 3), (2, 3), (2, 2), (4, 2), (1, 0), (4, 1), (1, 1)]
+    liste = [(1, 2), (3, 2), (0, 0), (1, 3), (2, 3), (2, 2), (4, 2), (1, 0), (4, 1), (1, 1)]
     assert rectangle_englobant(liste) == (0, 0, 4, 3)
 
 @pytest.mark.parametrize("callable_object, iterable_object, expected_value", [
