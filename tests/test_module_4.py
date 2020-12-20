@@ -27,3 +27,6 @@ def test_my_generic_mac():
 ])
 def test_palindrome(value, expected_result):
     assert palindrome(value) == expected_result
+
+
+
